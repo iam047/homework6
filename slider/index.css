@@ -1,0 +1,51 @@
+.cont {
+	width: 600px;
+	margin: 0 auto;
+	height: 600px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.carousel {
+	width: 98%;
+	height: 300px;
+	border: 2px solid #000000;
+	margin: 0 auto;
+}
+
+.inactive{
+	display: none;
+}
+
+.content {
+	list-style: none;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0px;
+}
+
+.slide {
+	height: 100%;
+}
+
+.nav {
+	width: 98%;
+	margin: 0 auto;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+.slide-size {
+	width: 100%;
+	height: 100%;
+}
