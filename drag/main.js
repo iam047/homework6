@@ -14,3 +14,4 @@ Element.prototype.drag = function() {
     elem.ondragstart = function() { return 0 }
 };
 document.getElementById('elem').drag();
+
