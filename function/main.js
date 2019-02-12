@@ -9,10 +9,10 @@ const isPrime = n => {
     }
     return true;
 };
-console.log(isPrime(2));
+console.log('isPrime', isPrime(2));
 
 const  factorial = n =>  n ? n * factorial(n - 1) : 1;
-console.log(factorial(5));
+console.log('factorial', factorial(5));
 
 const fib = n => {
     const arr = new Array(0, 1);
@@ -21,7 +21,7 @@ const fib = n => {
     }
     return arr[n - 1] + arr[n - 2];
 };
-console.log(fib(51));
+console.log('fib', fib(51));
 
 const isSorted = arr => {
     for (let i = 0; i < arr.length; i++) {
@@ -33,7 +33,7 @@ const isSorted = arr => {
     }
     return true;
 };
-console.log(isSorted([-123, 0, 3, 9, 12, 32]));
+console.log('isSorted', isSorted([-123, 0, 3, 9, 12, 32]));
 
 const reverse = str => {
     const arr = str.split('');
@@ -44,6 +44,8 @@ const reverse = str => {
     return newString;
 };
 
+console.log('reverse', reverse('reverse'))
+
 const indexOf = (arr, numb) => {
     for (let i = 0; i < arr.length; i++) {
         if(arr[i]===numb) {
@@ -53,7 +55,7 @@ const indexOf = (arr, numb) => {
 
     return -1;
 };
-console.log(indexOf([1, 2, 3, 4, 5, 6, 7], 4));
+console.log('index', indexOf([1, 2, 3, 4, 5, 6, 7], 4));
 
 const isPalindrome = str => {
     const string = str.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
@@ -72,7 +74,7 @@ const missing = arr =>{
     }
     return arr2;
 };
-console.log(missing([ 1, 3, 3, 6 ]));
+console.log('missing', missing([ 1, 3, 3, 6 ]));
 
 const isBalanced = (string) => {
     let openB = [];
@@ -96,4 +98,4 @@ const isBalanced = (string) => {
     return !openB.length;
 };
 
-console.log(isBalanced('{)}'));
+console.log('isBalanced', isBalanced('{)}'));
