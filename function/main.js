@@ -44,14 +44,16 @@ const reverse = str => {
     return newString;
 };
 
-const indexOf = (array, index) => {
-    for (let key in array) {
-        if (array[ key ] == index) {
-            return key;
+const indexOf = (arr, numb) => {
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]===numb) {
+            return i;
         }
     }
+
+    return -1;
 };
-console.log(indexOf([1, 2, 5], 2));
+console.log(indexOf([1, 2, 3, 4, 5, 6, 7], 4));
 
 const isPalindrome = str => {
     const string = str.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
